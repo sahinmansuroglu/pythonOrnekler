@@ -13,6 +13,6 @@ gunSayisi=aradakiGunSayisi
 yil=gunSayisi//365
 artanGunSayisi=gunSayisi%365
 artaAySayisi=artanGunSayisi//30
-print(f"{gunSayisi}: {yil} yil ve {artaAySayisi} aydir'dür ")
+print(f"{gunSayisi} gün: {yil} yil ve {artaAySayisi} aydir ")
 
 
