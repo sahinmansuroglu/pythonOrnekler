@@ -1,4 +1,4 @@
-# while dönüsü kullanılarak Kullancının geçerli puan girmesini ve bu punaların ortalamasını bulup ekrana yazdıran program
+# while dönüsü kullanılarak Kullancının geçerli puan girmesini ve bu puanların ortalamasını bulup ekrana yazdıran program
 
 puan1=0
 puan2=0
