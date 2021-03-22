@@ -24,3 +24,8 @@ for herbirHarf in kelime:
     if herbirHarf=="e":
         aHarfiSayisi=aHarfiSayisi+1
 print(f"{aHarfiSayisi}")
+
+#4.. 3 tane print'i tek satırda yazdırma
+print("a",end="")
+print("l",end="")
+print("i")
