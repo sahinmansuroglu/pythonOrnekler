@@ -50,3 +50,22 @@ for herbirHarf in cumle:
         print("")
 
 print(f"\nKelime Sayısı={kelimeSayisi}")
+#7.puan listesindeki zayıf notları ve adedini ekrana yazdırma
+puanListesi=[45,65,77,88,23,89,78,67,56,76,87]
+kalanNotSayisi=0
+for herbirPuan in puanListesi:
+    if herbirPuan<50:
+        print(herbirPuan,end="_")
+        kalanNotSayisi=kalanNotSayisi+1
+
+print(f"\nBaşarısız Not Sayisi:{kalanNotSayisi}")
+
+#8....puan listesindeki puanların ortalaması
+puanListesi=[45,65,77,88,23,89,78,67,56,76,87]
+puanToplam=0
+for herbirPuan in puanListesi:
+    puanToplam=puanToplam+herbirPuan
+
+ortalama= puanToplam / len(puanListesi)
+print(f"\n Ortalama:{ortalama}")
+
