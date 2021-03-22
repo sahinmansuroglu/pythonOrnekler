@@ -76,7 +76,9 @@ for herbirPuan in puanListesi:
     if herbirPuan>=60 and herbirPuan<=69:
         print(herbirPuan,end=" ")
         adet=adet+1
-print(f"\n3 notuna karşılık gelen puan adedi:{adet}")#9....puan listesindeki  en büyük ve en küçük puanıu buludurm ekrana yazdıran program
+print(f"\n3 notuna karşılık gelen puan adedi:{adet}")
+
+#9....puan listesindeki  en büyük ve en küçük puanıu buludurm ekrana yazdıran program
 puanListesi=[45,65,77,88,23,89,78,67,56,76,87]
 enBuyukPuan=puanListesi[0]
 enKucukPuan=puanListesi[0]
