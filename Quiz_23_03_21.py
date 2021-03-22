@@ -25,7 +25,7 @@ for herbirHarf in kelime:
         aHarfiSayisi=aHarfiSayisi+1
 print(f"{aHarfiSayisi}")
 
-#4.. 3 tane print'i tek satırda yazdırma
+#4.. birden fazla print ile metinleri yanyana yazdırma. 
 print("a",end="")
 print("l",end="")
 print("i")
