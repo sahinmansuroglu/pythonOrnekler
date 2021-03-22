@@ -69,3 +69,26 @@ for herbirPuan in puanListesi:
 ortalama= puanToplam / len(puanListesi)
 print(f"\n Ortalama:{ortalama}")
 
+#8....puan listesindeki 3 Notuna karşılık kaç puan var bunu hesaplatın
+puanListesi=[45,65,77,88,23,89,78,67,56,76,87]
+adet=0
+for herbirPuan in puanListesi:
+    if herbirPuan>=60 and herbirPuan<=69:
+        print(herbirPuan,end=" ")
+        adet=adet+1
+print(f"\n3 notuna karşılık gelen puan adedi:{adet}")#9....puan listesindeki  en büyük ve en küçük puanıu buludurm ekrana yazdıran program
+puanListesi=[45,65,77,88,23,89,78,67,56,76,87]
+enBuyukPuan=puanListesi[0]
+enKucukPuan=puanListesi[0]
+for herbirPuan in puanListesi:
+    if herbirPuan>enBuyukPuan:
+        enBuyukPuan=herbirPuan
+    if herbirPuan<enKucukPuan:
+        enKucukPuan=herbirPuan
+
+print(f"Listedeki En Küçük Puan:{enKucukPuan}")
+print(f"Listedeki En Büyük Puan:{enBuyukPuan}")
+
+
+
+
