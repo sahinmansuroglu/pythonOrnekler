@@ -33,6 +33,45 @@ toplam=0
 for i in range(1,11):
     print(f"{i}. sayıyı üretiyorum..")
     time.sleep(2)
+
+    
+#6 Sayı Bulma Oyunu
+
+import  random
+while True:
+    print("-------Yeni Oyun---------")
+    print("1- Kolay (1-50)")
+    print("2- Orta (1-100)")
+    print("3- Zor (1-1000)")
+    secim=int(input("Seciminiz:"))
+    maxSayi=50
+    if secim==1:
+        maxSayi=50
+    elif secim==2:
+        maxSayi=100
+    elif secim == 3:
+        maxSayi = 1000
+    else:
+        print("Girilen değer hatalı olduğundan oyun kolay olarak başlatılacaktır.")
+    bilgisayarinTuttuguSayi=random.randint(1,maxSayi)
+    durum="bulunmadı"
+    for i in range(1,11):
+        girilenSayi=int(input(f"{i}. hakkınız-Sayi girişi:"))
+        if girilenSayi<bilgisayarinTuttuguSayi:
+            print("Sayıyı büyültün")
+        elif girilenSayi>bilgisayarinTuttuguSayi:
+            print("Sayıyı Küçültün")
+        else:
+            durum="bulundu"
+            print("Tebrikler Sayıyı Buldunuz")
+            break
+    if durum=="bulunmadı":
+        print("Size verilen hakkınız doldu")
+    cevap=input("Oyuna Devam Etmek istiyor musunuz? (E/H)")
+
+    if cevap=="H" or cevap=="h":
+        print("Oyun Sonlandırılıyor")
+        break
     rastgeleSayi=random.randint(1,1000)
     toplam=rastgeleSayi+toplam
     print(f"{rastgeleSayi} sayısını ürettim..")
