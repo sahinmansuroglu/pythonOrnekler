@@ -35,6 +35,23 @@ for i in range(1,11):
     time.sleep(2)
 
     
+
+
+#5 Bilgisayara 1 ile 10 arasında rastgele 5 adet sayı ürettiriniz:
+# Üretilen sayıların içerisinde hiçbir zaman tekrar eden sayı olmayacak
+import  random
+sayiList=[]
+i=1
+while i<=5:
+    uretilenSayi=random.randint(1,10)
+    if uretilenSayi in sayiList:
+        print(f"tekrarlı sayı:{uretilenSayi}")
+    else:
+        sayiList.append(uretilenSayi)
+        i=i+1
+
+print(sayiList)
+
 #6 Sayı Bulma Oyunu
 
 import  random
@@ -80,18 +97,3 @@ print("Toplam ve Ortalama hesaplatılıyor ")
 time.sleep(3)
 print(f"Urettiğim 10 sayının toplamı={toplam}")
 print(f"Urettiğim 10 sayının ortalaması={toplam/10}")
-
-#5 Bilgisayara 1 ile 10 arasında rastgele 5 adet sayı ürettiriniz:
-# Üretilen sayıların içerisinde hiçbir zaman tekrar eden sayı olmayacak
-import  random
-sayiList=[]
-i=1
-while i<=5:
-    uretilenSayi=random.randint(1,10)
-    if uretilenSayi in sayiList:
-        print(f"tekrarlı sayı:{uretilenSayi}")
-    else:
-        sayiList.append(uretilenSayi)
-        i=i+1
-
-print(sayiList)
