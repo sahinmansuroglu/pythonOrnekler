@@ -88,3 +88,17 @@ def topla(*sayilar):
     print(f"{sayiAdedi} tane sayının Ortalaması={ortalama}")
 
 topla(65,95,98,98,36,9)
+
+#7. Öyle bir fonksiyon tasarlayınki parametre olarak gönderdiğim sayılardan sadece
+#tek olanları ekrana yazdırsın.
+
+# tanımladığınız fonksiyonu farklı sayıda parametreler ile çağırınız
+def tekleriYazdir(*sayilar):
+    teklerinAdedi=0
+    for herbirSayi in sayilar:
+       if herbirSayi % 2 ==1:
+           teklerinAdedi=teklerinAdedi+1
+           print(f"{herbirSayi}")
+    print(f"{len(sayilar)} tane sayının içerisinde {teklerinAdedi} tane tek sayı vardır...")
+
+tekleriYazdir(85,6,12,32,4,6,69,7,4,16)
