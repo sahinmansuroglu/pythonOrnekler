@@ -9,3 +9,18 @@ ekranaMesajYaz()
 ekranaMesajYaz()
 ekranaMesajYaz()
 ekranaMesajYaz()
+
+#2. "ad" isminde bir parametre alan ve ad'ın başına merhaba koyup
+#ekrana yazdıran ekranaMesajYaz adında bir fonksiyon tanımlayınız
+#ve fonksiyona 4 farklı isim stringi göndererek fonksiyonu çağırınız
+
+def ekranaMesajYaz(ad):
+    print(f"Merhaba {ad}")
+
+ad1="serdar"
+ad2="Selin"
+ekranaMesajYaz(ad1)
+ekranaMesajYaz(ad2)
+ekranaMesajYaz("Mehmet")
+ekranaMesajYaz("Ceren")
+
