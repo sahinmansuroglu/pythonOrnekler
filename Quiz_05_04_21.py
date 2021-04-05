@@ -24,3 +24,21 @@ ekranaMesajYaz(ad2)
 ekranaMesajYaz("Mehmet")
 ekranaMesajYaz("Ceren")
 
+#3.ad, soyad, dogumTarihi isminde 3 adet parametre alan
+#mesajYaz adında bir fonksiyon tanımlayınız.
+# Bu fonksiyon ekrana ad soyad'ın başına merhaba yazdıracak
+# ve dogumtarihini kullanarak yasını hesaplatıp ekrana yazdıracak
+# oluşturduğunuz fonksiyonu klavyeden girilen değerler ile çağırınız
+
+def mesajYaz(ad,soyad,dogumTarihi):
+    yas=2020-dogumTarihi
+    print(f"Merhaba {ad} {soyad}")
+    print(f"Yaşınız:{yas}")
+# Fonksiyonun denemesi
+mesajYaz("Şahin","Mansuroğlu",1982)
+
+girilenAd=input("Adınızı Giriniz:")
+girilenSoyad=input("Soyadınızı Giriniz:")
+girilenYas=int(input("Doğum Tarihini Giriniz:"))
+
+mesajYaz(girilenAd,girilenSoyad,girilenYas)
