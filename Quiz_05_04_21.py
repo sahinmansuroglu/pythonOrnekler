@@ -55,3 +55,21 @@ def mesajYaz(*adlar):
 
 mesajYaz("ali","veli","serdar")
 mesajYaz("ali","veli")
+
+#5.Parametre(s1,s2) olarak aldığı 2 sayıyı toplayan topla2 adında bir fonskyion tanımlayınız.
+#Parametr(s1,s2,s3) olarak aldığı 3 sayıyı toplayan topla3 adında ikinci bir fonskyion tanımlayınız.
+#sonuçlar da fonksiyon içerisinde ekrana yazdırılsın
+# tanımladığınızı bu 2 fonksiyonu tam sayılar gödererek çağırın
+def topla2(s1,s2):
+    sonuc=s1+s2
+    print(f"2 Sayının Toplamı:{sonuc}")
+
+def topla3(s1,s2,s3):
+    sonuc=s1+s2+s3
+    print(f"3 Sayının Toplamı:{sonuc}")
+
+topla2(65,61)
+topla2(25,33)
+topla2(65,33)
+topla3(98,65,312)
+topla3(95,65,312)
