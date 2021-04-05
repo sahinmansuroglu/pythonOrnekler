@@ -42,3 +42,16 @@ girilenSoyad=input("Soyadınızı Giriniz:")
 girilenYas=int(input("Doğum Tarihini Giriniz:"))
 
 mesajYaz(girilenAd,girilenSoyad,girilenYas)
+
+#4.Öyle bir fonksiyon tasarlayınız ki kaç tane parametre olarak ad gönderirsek
+#herbirinin başına ayrı ayrı  merhaba yazmasını sağlayabilelim.
+# bu fonksiyonu farklı sayıda parametre ile çağırınız
+
+def mesajYaz(*adlar):
+    for herbirAd in adlar:
+        print(f"Merhaba {herbirAd}")
+
+
+
+mesajYaz("ali","veli","serdar")
+mesajYaz("ali","veli")
