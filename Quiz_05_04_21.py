@@ -73,3 +73,18 @@ topla2(25,33)
 topla2(65,33)
 topla3(98,65,312)
 topla3(95,65,312)
+
+#6. Öyle bir fonksiyonu tanımlayın ki kaç tane sayıyı parametre olarak gönderirsem
+# göndereyim fonksyion bu tüm sayıların toplamını ve ortalamasını hesaplayıp ekrana yazdırsın
+# tanımladığınız bu fonksiyonu farklı sayıda paramterlerle çağırınız
+
+def topla(*sayilar):
+    toplam=0
+    for herbirSayi in sayilar:
+        toplam=herbirSayi+toplam
+    sayiAdedi=len(sayilar)
+    ortalama=toplam/sayiAdedi
+    print(f"{sayiAdedi} tane sayının Toplamı={toplam}")
+    print(f"{sayiAdedi} tane sayının Ortalaması={ortalama}")
+
+topla(65,95,98,98,36,9)
