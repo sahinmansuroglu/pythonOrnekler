@@ -182,3 +182,21 @@ s2=int(input("1. Sayıyı Giriniz:"))
 for i in range(6):
     print(f"{islemListesi[i]} işleminin sonucu:{fonksiyonListesi[i](s1,s2)}")
 
+#6. fonksiyon İsimlerinden liste oluşturma Örneği
+def ekle():
+    print("Ekleme İşlemi Fonksiyonu")
+
+def sil():
+    print("Silme İşlemi Fonksiyonu")
+def guncelle():
+    print("Güncelleme İşlemi Fonksiyonu")
+def listeleme():
+    print("Listeleme İşlemi Fonksiyonu")
+while True:
+    print("İşlemler..")
+    print("0- Ekle \n1- Sil\n2- Güncelle \n3- Listeleme")
+    seciminiz=int(input("Seçiminizi Giriniz(0-3):"))
+    if seciminiz==4:
+        break
+    fonksiyonList=[ekle,sil,guncelle,listeleme]
+    fonksiyonList[seciminiz]()
