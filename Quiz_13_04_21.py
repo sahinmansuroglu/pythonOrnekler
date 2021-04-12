@@ -129,3 +129,56 @@ while True:
 
     else:
         print("Lütfen 0 ile 6 arası değer giriniz!")
+#4. Klavyeden girilen 2 sayı arasına dört işlem, mod alma  üs alma işlemlerinin
+# tümünü yapıp
+# sonuçlarını ekrana yazdırınız.
+#Olabilecek En kısa yöntemle yapınız 
+# 1. YOL
+def topla(s1,s2):
+    return  s1+s2
+def cikart(s1,s2):
+    return  s1-s2
+def carp(s1,s2):
+    return  s1*s2
+def bol(s1,s2):
+    return  s1/s2
+def modAl(s1,s2):
+    return  s1 % s2
+def usAl(s1,s2):
+    return s1**s2
+s1=int(input("1. Sayıyı Giriniz:"))
+s2=int(input("1. Sayıyı Giriniz:"))
+print(f"Toplama işleminin Sonucu:{topla(s1,s2)}")
+print(f"Çıkartma işleminin Sonucu:{cikart(s1,s2)}")
+print(f"Çarpma işleminin Sonucu:{carp(s1,s2)}")
+print(f"Bölme işleminin Sonucu:{bol(s1,s2)}")
+print(f"Mod Alma işleminin Sonucu:{modAl(s1,s2)}")
+print(f"ÜS alma işleminin Sonucu:{usAl(s1,s2)}")
+
+#5. Klavyeden girilen 2 sayı arasına dört işlem, mod alma  üs alma işlemlerinin
+# tümünü yapıp
+# sonuçlarını ekrana yazdırınız.
+# Olabilecek En kısa yöntemle yapınız
+# 2. YOL
+def topla(s1,s2):
+    return  s1+s2
+def cikart(s1,s2):
+    return  s1-s2
+def carp(s1,s2):
+    return  s1*s2
+def bol(s1,s2):
+    return  s1/s2
+def modAl(s1,s2):
+    return  s1 % s2
+def usAl(s1,s2):
+    return s1**s2
+
+fonksiyonListesi=[topla,cikart,carp,bol,modAl,usAl]
+islemListesi=["Toplama","Çıkartma","Çarpma","Bölme","Mod alma","Üs Alma"]
+
+s1=int(input("1. Sayıyı Giriniz:"))
+s2=int(input("1. Sayıyı Giriniz:"))
+
+for i in range(6):
+    print(f"{islemListesi[i]} işleminin sonucu:{fonksiyonListesi[i](s1,s2)}")
+
