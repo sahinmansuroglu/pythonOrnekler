@@ -1,3 +1,8 @@
+# log kayıtları listesinden herhangi bir kişinin girdiği siteleri ve giriş tarihi ayıklayıp ekrana yazdıran program
+# bunun için de iç içe 2 adet split kullanıldı
+# ilk split ile bir kişinin kaydı bulundu
+# ikinci split ile de herbir kaydın adres tarih ve ad bilgileri ayrıldı
+
 logKayit="Ali:www.google.com:21.03.2021," \
          "veli:www.meb.gov.tr:22.04.2021," \
          "Arda:www.abc.com:15.03.2021," \
@@ -28,3 +33,21 @@ while True:
         print(f"{aranacakAd} adlı kişinin log kayıtlarında bilgisi yoktur")
     else:
         print(f"{aranacakAd} adlı kişinin {kayitSayisi} tane kaydı vardır.")
+print("Çıkış Yapıldı..")
+
+# Örnek Çıktı:
+# Aranacak Adı Giriniz:Ahmet
+# Ahmet adlı kişinin log kayıtlarında bilgisi yoktur
+# Aranacak Adı Giriniz:Arda
+# Arda adlı kisi  www.abc.com sitesine 15.03.2021 tarihinde girmiştir..
+# Arda adlı kişinin 1 tane kaydı vardır.
+# Aranacak Adı Giriniz:Ali
+# Ali adlı kisi  www.google.com sitesine 21.03.2021 tarihinde girmiştir..
+# Ali adlı kisi  www.oyun.com sitesine 12.04.2021 tarihinde girmiştir..
+# Ali adlı kisi  www.haberler.com sitesine 23.03.2021 tarihinde girmiştir..
+# Ali adlı kişinin 3 tane kaydı vardır.
+# Aranacak Adı Giriniz:Erkan
+# Erkan adlı kisi  www.xyz.com sitesine 01.05.2021 tarihinde girmiştir..
+# Erkan adlı kişinin 1 tane kaydı vardır.
+# Aranacak Adı Giriniz:x
+# Çıkış Yapıldı..
